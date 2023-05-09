@@ -1,0 +1,36 @@
+{
+  "name": "solidity-merkle-tree",
+  "version": "0.0.1",
+  "description": "Merkle Tree Solidity implementation",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "compile": "npx hardhat compile",
+    "contracts:lint-and-format": "prettier --write \"./contracts/**/*.+(sol)\" && solhint ./contracts --fix",
+    "contracts:prepende-license": "npx hardhat prepend-spdx-license",
+    "format": "prettier --write  \"./**/*.+(js|json)\"",
+    "test": "npx hardhat test"
+  },
+  "author": "allemanfredi",
+  "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "1.0.4",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "3.1.6",
+    "@nomiclabs/hardhat-web3": "2.0.0",
+    "@openzeppelin/contracts": "^4.7.3",
+    "chai": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.13.0",
+    "hardhat-gas-reporter": "1.0.9",
+    "hardhat-log-remover": "^2.0.2",
+    "hardhat-spdx-license-identifier": "^2.1.0",
+    "merkletreejs": "^0.3.10",
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.1.3",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.8.2"
+  }
+}
